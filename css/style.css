@@ -1,0 +1,219 @@
+*{
+	cursor: url(https://cur.cursors-4u.net/nature/nat-3/nat260.cur), auto !important;
+	font-family: "Poppin", sans-serif;
+}
+html{
+	background: url(../img/bg.png);
+	background-size: cover;
+	background-position: center;
+	color: #333;
+} 
+body{
+margin: 2px;
+}
+#container{
+border-radius: 10px;
+margin: 100px;
+margin-top: 0;
+text-align: center;
+	h1{
+	font-family: "Cat Paw";
+	font-size: 3em;
+	user-select: none;
+	color: #FB7C9B;
+	}
+	display: flex;
+	justify-self: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #f5f5f5;
+	#boton button{
+	       background: #FB7C9B;
+	       border: none;
+	       padding: 10px 20px;
+	       border-radius: 10px;
+	       margin: 20px;
+	       font-size: 20px;
+	       &:hover{
+		       background: #F5A7B8;
+		       cursor: pointer;
+		       transition: all 0.3s ease;
+		       transform: scale(1.05);
+	       }
+       }
+	#catito{
+		border-radius: 5%;
+		justify-self: center;
+		height: 400px;
+		img{
+			height: 300px;
+			border-radius: 10px;
+			margin: 20px;
+			margin-bottom: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+			user-select: none;
+		}
+	}
+	#contador{
+	 margin:0px;
+	 font-size: 20px;
+	 font-weight: bold;
+	}
+	#miautidad{
+			width: 300px;
+			min-width: 300px;
+			min-height: 25px;
+			text-align: center;
+			margin: 0px auto;
+			background: #dcdcdc;
+			border-radius: 10px;
+		}
+
+        #btncoleccion{
+		background: #FB7C9B;
+		width: 100px;
+		align-self: end;
+		border-radius: 10px;
+		margin-right: 20px;
+		padding: 10px;
+		user-select: none;
+		&:hover{
+			background: #F5A7B8;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			transform: scale(1.05);
+		}
+	}
+}
+.modal{
+display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+	.modal-content {
+		background-color: #fefefe;
+		border: 1px solid #888;
+		height: 80%; 
+		width: 80%;
+		border-radius: 10px;
+		text-align: center;
+		align-self: center;
+		justify-self: center;
+		margin: 0px auto;
+		overflow-y: scroll;
+		.close{
+			color: #aaa;
+			float: right;
+			position: sticky;
+			top: 0;
+			right: 25px;
+
+			font-size: 28px;
+			font-weight: bold;
+			margin-right: 20px;
+			&:hover{
+				color: black;
+				cursor: pointer;
+			}
+		}
+		.cat-image{
+			height: 200px;
+			border-radius: 10px;
+			margin: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+			&:hover{
+				transform: scale(1.05);
+				transition: all 0.3s ease;
+				cursor: pointer;
+			}
+		}
+  	}
+ }
+
+@media (max-width: 1200px) {
+	#container{
+		margin: 50px;
+		h1{
+			font-size: 2.5em;
+		}
+		#catito{
+			height: 350px;
+			img{
+				height: 250px;
+			}
+		}
+		#miautidad{
+			width: 80%;
+			min-width: 80%;
+			font-size: 18px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	#container{
+		align-self: center;
+		justify-self: center;
+		margin: 20px;
+		margin-top: 0;
+		h1{
+			font-size: 2em;
+		}
+		#catito{
+			height: 300px;
+			img{
+				height: 200px;
+			}
+		}
+		#miautidad{
+			width: 90%;
+			min-width: 90%;
+			font-size: 16px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	#container{
+		align-self: center;
+		justify-self: center;
+		margin: 10px;
+		h1{
+			font-size: 1.5em;
+		}
+		#catito{
+			height: 250px;
+			img{
+				height: 150px;
+			}
+		}
+		#miautidad{
+			width: 100%;
+			min-width: 100%;
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 320px) {
+	#container{
+		margin: 5px;
+		justify-self: center;
+		align-self: center;
+		h1{
+			font-size: 1.2em;
+		}
+		#catito{
+			height: 200px;
+			img{
+				height: 120px;
+			}
+		}
+		#miautidad{
+			width: 100%;
+			min-width: 100%;
+			font-size: 12px;
+		}
+	}
+}
